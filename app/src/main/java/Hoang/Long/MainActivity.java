@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         user.name = editTextName.getText().toString();
         user.email = editTextPhone.getText().toString();
         user.gender = gender;
-        db.bookmarkDao().insertUser(user);
+        db.UserDao().insertUser(user);
     }
 
     CompoundButton.OnCheckedChangeListener listenerRadio

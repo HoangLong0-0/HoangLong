@@ -10,7 +10,7 @@ import androidx.room.RoomDatabase;
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase appDatabase;
 
-    public abstract UserDao bookmarkDao();
+    public abstract UserDao UserDao();
 
     public static AppDatabase getAppDatabase(Context context) {
         if (appDatabase == null) {
